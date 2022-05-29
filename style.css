@@ -5,6 +5,9 @@ header {
 	background-color: #fff;
 	padding: 1rem 12rem;
 }
+html {
+	font-size: 80.5%;
+}
 .navigation {
 	display: flex;
 	justify-content: center;
@@ -41,7 +44,7 @@ header {
 	transition: all 0.2s ease-in;
 }
 .navigation a img {
-	width: 3rem;
+	width: 2.35rem;
 }
 html {
 	scroll-behavior: smooth;
@@ -103,6 +106,9 @@ body {
 }
 .DarkMode * {
 	color: #fff;
+}
+.DarkMode .color-gray:hover {
+	color: #fff !important;
 }
 .btns {
 	color: #000;
@@ -277,7 +283,7 @@ section #home {
 .car {
 	text-align: center;
 	color: #555;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 	/* box-shadow: 0 0 20px 0 rgb(0 0 0 / 15%); */
 	margin: 0.5rem 0;
 	position: relative;
@@ -345,7 +351,7 @@ section {
 	position: relative;
 	color: #fff;
 	background-color: var(--main-color);
-	font-size: 0.7rem;
+	font-size: 1rem;
 	padding: 0.35rem 1rem;
 	border-radius: 0.2rem;
 	bottom: 2.3rem;
@@ -423,6 +429,10 @@ section {
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 	background-color: #fff;
 	color: #000;
+	width: 100%;
+}
+#Contact .left {
+	flex-basis: 25%;
 }
 .mainContaint {
 	display: flex;
@@ -434,7 +444,7 @@ section {
 	border: none;
 	padding: 0.5rem 1rem;
 	background: #efefef;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	border-radius: 0.4rem;
 	margin: 0.5rem auto;
 	display: block;
@@ -443,13 +453,12 @@ section {
 .form-control textarea {
 	width: 60%;
 	display: block;
-	font-size: large;
+	font-size: 1.3rem;
 	margin: 0.5rem auto;
 	outline: none;
 	border: none;
 	padding: 0.5rem 1rem;
 	background: #efefef;
-	font-size: 1rem;
 	border-radius: 0.4rem;
 	resize: none;
 }
@@ -488,19 +497,19 @@ footer .SocialHandles img:hover {
 	color: #000;
 	position: absolute;
 	width: 100%;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	display: none;
 }
 
 /* MEDIA QUERIES   */
 @media screen and (max-width: 1100px) {
 	html {
-		font-size: 14px;
+		font-size: 73%;
 	}
 }
 @media screen and (max-width: 950px) {
 	html {
-		font-size: 12px;
+		font-size: 68%;
 	}
 	header {
 		justify-content: center !important;
@@ -523,6 +532,9 @@ footer .SocialHandles img:hover {
 @media screen and (max-width: 800px) {
 	#Services {
 		padding: 5% 3%;
+	}
+	html {
+		font-size: 62%;
 	}
 	section {
 		padding: 2%;
@@ -646,15 +658,22 @@ footer .SocialHandles img:hover {
 		margin: auto;
 	}
 }
-a {
-	display: inline;
-}
+
 @media screen and (max-width: 700px) {
 	.row {
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
 @media screen and (max-width: 400px) {
+	html {
+		font-size: 55%;
+	}
+
+	textarea,
+	.inp {
+		width: 80% !important;
+		font-size: 1.3rem !important;
+	}
 	.navigation {
 		position: fixed;
 		display: grid;
@@ -669,9 +688,6 @@ a {
 		bottom: -100%;
 		height: 15rem;
 		grid-template-columns: repeat(3, 1fr);
-	}
-	.DarkMode .bar a img {
-		filter: invert(100%);
 	}
 	.DarkMode .navigation a {
 		background-color: transparent;
@@ -689,6 +705,9 @@ a {
 	.DarkMode .bar a {
 		color: #fff !important;
 	}
+	/* .DarkMode .bar .BarmenuBtn {
+		filter: invert(100%);
+	} */
 	.navigation a {
 		background-color: transparent;
 	}
