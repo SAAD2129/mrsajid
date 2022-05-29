@@ -84,21 +84,21 @@ barmode.addEventListener("click", () => {
 	document.body.classList.toggle("DarkMode");
 	menuBtn.classList.toggle("inverted");
 
-	if (localStorage.getItem("theme") == "light") {
-		localStorage.setItem("theme", "dark");
-	} else {
+	if (localStorage.getItem("theme") == "dark") {
 		localStorage.setItem("theme", "light");
+	} else {
+		localStorage.setItem("theme", "dark");
 	}
 });
 
-if (localStorage.getItem("theme") == "light") {
-	document.body.classList.add("DarkMode");
-	BarmenuBtn.classList.add("inverted");
-	menuBtn.classList.add("inverted");
-} else if (localStorage.getItem("theme") == "dark") {
+if (localStorage.getItem("theme") == "dark") {
 	document.body.classList.remove("DarkMode");
 	BarmenuBtn.classList.remove("inverted");
 	menuBtn.classList.remove("inverted");
+} else if (localStorage.getItem("theme") == "light") {
+	document.body.classList.add("DarkMode");
+	BarmenuBtn.classList.add("inverted");
+	menuBtn.classList.add("inverted");
 } else {
 	localStorage.setItem("theme", "light");
 	BarmenuBtn.classList.remove("inverted");
@@ -109,12 +109,12 @@ modeBtn.addEventListener("click", () => {
 	document.body.classList.toggle("DarkMode");
 	// menuBtn.classList.toggle("inverted");
 	// BarmenuBtn.classList.toggle("inverted");
-	if (localStorage.getItem("theme") == "light") {
-		localStorage.setItem("theme", "dark");
-		menuBtn.classList.remove("inverted");
-	} else {
+	if (localStorage.getItem("theme") == "dark") {
 		localStorage.setItem("theme", "light");
 		menuBtn.classList.add("inverted");
+	} else {
+		localStorage.setItem("theme", "dark");
+		menuBtn.classList.remove("inverted");
 	}
 });
 // Dark Mode Settings End Here;
