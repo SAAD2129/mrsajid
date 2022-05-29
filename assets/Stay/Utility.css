@@ -23,7 +23,9 @@ html{
   --trans-02: transition: all 1s ease-in;
 }
 /*  === === === === === ==> ALL COLOR PROPERTIES STARTS HERE */
-
+.filter-gray{
+  filter: grayscale(1);
+}
 .main-color {
   color: var(--main-color);
 }

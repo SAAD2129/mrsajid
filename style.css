@@ -268,7 +268,7 @@ section #home {
 	gap: 1.5rem;
 	padding: 6%;
 	position: relative;
-	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .Angle {
 	position: absolute;
@@ -388,7 +388,7 @@ section {
 	border-radius: 50%;
 }
 .row {
-	padding: 1rem;
+	/* padding: 1rem; */
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 5rem;
@@ -399,13 +399,13 @@ section {
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 	transition: all 0.2s ease-in;
 	padding: 2rem;
+	height: 15rem;
 	background-color: #fff;
 }
 .col:hover {
 	cursor: pointer;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 	transform: translateX(-10px);
-	padding: 2rem;
 }
 .hireme {
 	background-color: rgb(18, 15, 37);

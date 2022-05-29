@@ -44,7 +44,9 @@ html{
   transition: all .2s ease-in;
   color: rgb(8, 8, 8)!important;
 }
-
+.filter-gray{
+  filter: grayscale(1);
+}
 .box-s{
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
 }
