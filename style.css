@@ -268,7 +268,7 @@ section #home {
 	gap: 1.5rem;
 	padding: 6%;
 	position: relative;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 .Angle {
 	position: absolute;
@@ -346,7 +346,12 @@ section {
 .html {
 	width: 95%;
 }
-
+.wordpress {
+	width: 80%;
+}
+.wix {
+	width: 75%;
+}
 .caret {
 	position: relative;
 	color: #fff;
@@ -354,8 +359,8 @@ section {
 	font-size: 1rem;
 	padding: 0.35rem 1rem;
 	border-radius: 0.2rem;
-	bottom: 2.3rem;
-	left: -1.74rem;
+	bottom: 2.5rem;
+	left: -2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
