@@ -520,11 +520,14 @@ footer .SocialHandles {
 	position: static;
 	display: block;
 	margin: auto;
+	transform:none;
 }
 footer .SocialHandles img {
 	margin: 0.5rem;
+	transform:none;
 }
 footer .SocialHandles img:hover {
+	transform:none;
 	transform: translateY(-15px);
 }
 .profile {
