@@ -8,6 +8,7 @@ header {
 	top: 0;
 	background-color: #fff;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2)	;
+	z-index: 343234;
 
 }
 .carcontMaine {
@@ -121,7 +122,6 @@ header {
 }
 
 .show {
-	/* padding: 0.5rem; */
 	height: auto;
 	transition: all 0.3s ease;
 	padding: 0.5rem;
@@ -129,9 +129,6 @@ header {
 }
 .bg-orange {
 	background-color: var(--main-color) !important;
-}
-.icon {
-	/* width: 5rem; */
 }
 .icon-footer {
 	padding: 0.7rem;
