@@ -7,10 +7,8 @@ Carousal = () => {
   carimgs.forEach((carimg) => {
     if (index > carimgslength - 1 || index < 0) {
       index = 0;
-      console.log(carimgslength);
       carimg.style.transform = `translateX(${index * -35}vw)`;
     } else {
-      console.log(carimgslength);
       carimg.style.transform = `translateX(${index * -35}vw)`;
     }
     if (index == 1) {
@@ -32,13 +30,11 @@ prev.onclick = () => {
   } else if (index > carimgslength) {
     index -= 1;
   }
-  console.log(index);
   Carousal(index);
 };
 next.onclick = () => {
   if (index < carimgslength - 1) index += 1;
   else index = 0;
-  console.log(index);
   Carousal(index);
 };
 
@@ -46,13 +42,22 @@ let hide = document.querySelector(".hide");
 let headings = Array.from(document.querySelectorAll(".heading"));
 
 toggle = () => {
-  // hides.forEach((hide) => {
   hide.classList.toggle("show");
   headings.forEach((heading) => {
     heading.classList.toggle("bg-orange");
   });
-  // headings.forEach((heading) => {
-  // });
-  // });
-  // hide.
 };
+let MenuBtn = document.getElementById("MenuBtn");
+let navBar = document.querySelector(".navigation");
+MenuBtn.addEventListener('click',()=>{
+  if (navBar.style.left=='0rem') {
+    navBar.style.left = '-15rem';
+    MenuBtn.src = "../icons/menu-fill.svg";
+    MenuBtn.style.left='.5rem';
+  }
+  else{
+    navBar.style.left= '0rem';
+    MenuBtn.src = "../icons/close-fill.svg";
+    MenuBtn.style.left='12rem';
+  }
+})

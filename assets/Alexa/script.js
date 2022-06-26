@@ -1,6 +1,5 @@
 let skilldetails = Array.from(document.querySelectorAll(".skill-details"));
 let Angles = Array.from(document.querySelectorAll(".Angle"));
-
 // skilldetails.forEach((element) => {
 //   Angles.forEach((element) => {
 //     element.addEventListener("click", () => {
@@ -29,12 +28,10 @@ let Angles = Array.from(document.querySelectorAll(".Angle"));
 //   };
 // });
 let edu = document.querySelector(".edu");
-let work = document.querySelector(".work");
+let work = document.querySelector(".working");
 let Education = document.querySelector(".Education");
 let Work = document.querySelector(".Work");
-work.addEventListener("click", () => {
-	// console.log("hey");
-	// console.log(Work);
+working.addEventListener("click", () => {
 	Education.style.display = "none";
 	Work.style.display = "flex";
 });
@@ -54,9 +51,6 @@ showmodals.forEach((showmodal) => {
 		});
 	});
 });
-// showmodal.addEventListener("click", () => {
-//   modal.style.display = "flex";
-// });
 modals.forEach((modal) => {
 	closes.forEach((close) => {
 		close.addEventListener("click", () => {
@@ -69,8 +63,6 @@ let length = pfolios.length;
 let index = 0;
 
 Carousal = () => {
-	// console.log("hey");
-	// console.log(index);
 	index++;
 	pfolios.forEach((pfolio) => {
 		if (index > length - 1) {
@@ -101,18 +93,19 @@ let skillPerfront = document.querySelector(".skillPerfront");
 let skillPerback = document.querySelector(".skillPerback");
 let frontend = document.querySelector(".frontend");
 let backend = document.querySelector(".backend");
-
-frontend.addEventListener("click", () => {
-	if (skillPerfront.style.display == "block") {
-		skillPerfront.style.display = "none";
-	} else {
-		skillPerfront.style.display = "block";
-	}
-});
-backend.addEventListener("click", () => {
-	if (skillPerback.style.display == "block") {
-		skillPerback.style.display = "none";
-	} else {
-		skillPerback.style.display = "block";
-	}
-});
+let newd=backend.nextElementSibling.nextElementSibling;
+console.log(newd);
+// frontend.addEventListener("click", () => {
+// 	if (skillPerfront.style.display == "block") {
+// 		skillPerfront.style.display = "none";
+// 	} else {
+// 		skillPerfront.style.display = "block";
+// 	}
+// });
+// backend.addEventListener("click", () => {
+// 	if (skillPerback.style.display == "block") {
+// 		skillPerback.style.display = "none";
+// 	} else {
+// 		skillPerback.style.display = "block";
+// 	}
+// });
